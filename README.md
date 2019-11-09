@@ -2,7 +2,20 @@
 This is a temporary repository containing codes and checkpoints of our paper submitted to ICLR 2020. Our proposed algorithm MACER outperforms all existing provably L2-defenses in both average certified radius and training speed on Cifar-10, ImageNet, MNIST and SVHN. Besides, our method does not depend on any specific attack strategy, which makes it substantially different from adversarial training. Our method is also scalable to modern deep neural networks on a wide range of real-world datasets.
 
 ## ICLR Updates
-We will keep updating this repository until it is closed. The updates will appear in the final version of our paper.
+### Updates on Nov 9, 2019 (for rebuttal)
+Two more checkpoints are added to the `checkpoint` folder. Their performances and training time are listed below:
+
+| Model | Trained Epochs | Total hrs | 0.00 | 0.25 | 0.50 | 0.75 | 1.00 | 1.25 | 1.50 | 1.75 | ACR |
+|------|------|------|------|------|------|------|------|------|------|------|------|
+| Salman-0.25 | 150 | 82.92 | 0.74 | 0.67 | 0.57 | 0.47 | 0.00 | 0.00 | 0.00 | 0.00 | 0.538 |
+| MACER-0.25 *(new)* | 150 | 21.00 | 0.76 | 0.67 | 0.57 | 0.42 | 0.00 | 0.00 | 0.00 | 0.00 | 0.531 |
+| MACER-0.25 | 440 | 61.60 | 0.81 | 0.71 | 0.59 | 0.43 | 0.00 | 0.00 | 0.00 | 0.00 | 0.556 |
+| | | | | | | | | | | | |
+| Salman-0.50 | 150 | 82.92 | 0.50 | 0.46 | 0.44 | 0.40 | 0.38 | 0.33 | 0.29 | 0.23 | 0.709 |
+| MACER-0.50 *(new)* | 150 | 21.00 | 0.62 | 0.57 | 0.50 | 0.44 | 0.38 | 0.29 | 0.21 | 0.13 | 0.712 |
+| MACER-0.50 | 440 | 61.60 | 0.66 | 0.60 | 0.53 | 0.46 | 0.38 | 0.29 | 0.19 | 0.12 | 0.726 |
+
+
 
 ## Anonymity Notice
 To follow the double-blind reviewing rule of ICLR, we have made this repository and this Github account anonymous. This is a temporary repository, and will be closed after the review process. We will put the URL of the permanent repository in the final version of our paper.
